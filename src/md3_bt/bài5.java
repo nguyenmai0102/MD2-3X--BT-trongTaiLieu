@@ -8,26 +8,32 @@ public class bài5 {
 
         // khoi tao mot mang va in ra gia tri
         Scanner scanner = new Scanner(System.in);
-        System.out.println("nhập số khởi tạo mảng: \n");
-        int n = scanner.nextInt();
+        System.out.println("nhập số khởi tạo mảng:");
+        int n = Integer.parseInt(scanner.nextLine());
         int [] array = new int[n];
-        System.out.println("nhập vào các giá trị của các phần tử trong mảng: \n");
-        for (int i = 0; i < n; i++) {
-            System.out.printf("array [%d]=",i);
+
+        System.out.println("nhập vào các giá trị của các phần tử trong mảng: ");
+        for (int i = 0; i < array.length; i++) {
             array[i] =Integer.parseInt(scanner.nextLine());
-            // tim so nho nhat
-            int min = array[0];
-            for (int j = 0; j < n; j++) {
-                for (int k = 0; k < j; k++) {
-                    if (min >array[j]){
-                        min=array[j];
-                    }
-
-                }
-
             }
-System.out.println("so nho nhat trong mang la: "+min);
+        // mang sau khi khoi tao
+        System.out.printf("mang sau khi khoi tao");
+        for (int j = 0; j < args.length; j++) {
+            System.out.printf("%d\t=",array[j]);
         }
-    }
-}
+        // tim so nho nhat
+        int min = array[0];
+        for (int j = 0; j < args.length; j++) {
+            if (min >array[j]){
+                min=array[j];
+            }
+        }
+        System.out.println();
+        System.out.println("so nho nhat trong mang la: "+min);
+        System.out.printf("%d", min);
+
+        }
+     }
+
+
 

@@ -8,7 +8,7 @@ public class bai3 {
         // khoi tao mang thu nhat
         Scanner scanner = new Scanner(System.in);
         // khoi tao mang thu nhat
-        System.out.println("nhap vao so phan tu cua mang thu 1: ");
+        System.out.println("nhap vao so phan tu cua mang thu 1: \n");
         int n = Integer.parseInt(scanner.nextLine());
         int [] old = new int[n];
        System.out.println("nhap gia tri cac phan tu cua mang thu nhat");
@@ -17,12 +17,12 @@ public class bai3 {
             old[i]=Integer.parseInt(scanner.nextLine());
         }
         // khoi to mang thu hai
-        System.out.printf("nhap vao gia tri cua mang thu 2");
+        System.out.printf("nhap vao gia tri cua mang thu 2: \n");
         int m = Integer.parseInt(scanner.nextLine());
         int [] arr = new int [m];
         System.out.println("nhap vao gia tri cac phan tu cua mang thu 2");
         for (int i = 0; i < arr.length; i++) {
-            System.out.printf("%d\t", arr[i]);
+            System.out.printf("arr [%d]= ", i);
             arr[i]=Integer.parseInt(scanner.nextLine());
 
         }
